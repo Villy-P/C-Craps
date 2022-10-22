@@ -9,8 +9,3 @@ player* newPlayer(char *name, int cash, int chips) {
     }
     return p;
 }
-
-void freePlayer(player *p) {
-    if (p)
-        free(p->name);
-}

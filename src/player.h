@@ -12,6 +12,4 @@ typedef struct Player {
 
 player* newPlayer(char *name, int cash, int chips);
 
-void freePlayer(player *p);
-
 #endif

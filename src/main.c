@@ -24,5 +24,6 @@ int main(int argc, char *argv[]) {
         printBoard(board);
     }
     free(mainPlayer);
+    free(board);
     return 0;
 }

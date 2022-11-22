@@ -9,7 +9,8 @@
                 "-g",
                 "${workspaceFolder}\\src\\*.c",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-static"
             ],
             "options": {
                 "cwd": "${fileDirname}"

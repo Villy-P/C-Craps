@@ -44,5 +44,6 @@ int main(int argc, char *argv[]) {
             shooter->chipsOnDontPass = chipsToPlace;
     }
     free(mainPlayer);
+    free(board);
     return 0;
 }

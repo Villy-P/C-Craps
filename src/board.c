@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-void printBoard(board *board) {
+void printBoard() {
     printf("                                       +-----+-----+-----+-----+------+------+-------+--.           \n");
     printf("                                       |     |     |     |     |      |      |       |   `--.       \n");
     printf("                                       +-----+-----+-----+-----+------+------+       |%s(6)%sD  ||`----.\n", ANSI_RED, ANSI_RESET);

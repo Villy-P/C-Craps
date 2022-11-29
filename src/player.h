@@ -3,13 +3,17 @@
 
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 
-typedef struct Player {
+struct Player {
     char name[256];
     int cash;
     int chips;
-} player;
+    bool isMainPlayer;
+    int chipsOnPass;
+    int chipsOnDontPass;
+};
 
-player* newPlayer(char *name, int cash, int chips);
+struct Player newPlayer(char *name, int cash, int chips, bool isMainPlayer);
 
 #endif

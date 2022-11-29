@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
     strcpy(mainPlayer->name, getStringInput(">"));
     system("cls");
     printf("%sHow much cash did you bring?%s\n", ANSI_MAGENTA, ANSI_RESET);
-    mainPlayer->cash = getIntInput(">", 1, INT_MAX);
+    mainPlayer->cash = getIntInput(">", 1, INT_MAX); 
     while (true) {
         printf("%sYou go to another table to play some more craps. Place down the money you want to give in return for chips.%s\n", ANSI_ORANGE, ANSI_RESET);
         printf("%sYou have $%d%s\n", ANSI_CYAN, mainPlayer->cash, ANSI_RESET);

@@ -12,8 +12,19 @@ struct Player {
     bool isMainPlayer;
     int chipsOnPass;
     int chipsOnDontPass;
+    int chipsOnPassOdds;
+    int chipsOnDontPassOdds;
+    int chipsOnBigSix;
+    int chipsOnBigEight;
+    int chipsOnField2;
+    int chipsOnField3;
+    int chipsOnField4;
+    int chipsOnField9;
+    int chipsOnField10;
+    int chipsOnField11;
+    int chipsOnField12;
 };
 
-struct Player newPlayer(char *name, int cash, int chips, bool isMainPlayer);
+struct Player* newPlayer(char *name, int cash, int chips, bool isMainPlayer);
 
 #endif

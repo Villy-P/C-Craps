@@ -7,7 +7,8 @@ struct LinkedList {
     struct Node *head;
 };
 
-struct LinkedList createNewLinkedList();
-void addToLinkedList(struct LinkedList *list, struct Node *node);
+struct LinkedList* createNewLinkedList();
+void addToLinkedList(struct Node **head, struct Node *node);
+void deleteFromLinkedList(struct Node **head, struct Node *node);
 
 #endif

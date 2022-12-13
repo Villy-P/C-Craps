@@ -1,14 +1,8 @@
 #include "random.h"
 
 #include <stdlib.h>
+#include <time.h>
 
-unsigned int randomInRange(unsigned int min, unsigned int max) {
-    int r;
-    const unsigned int range = 1 + max - min;
-    const unsigned int buckets = RAND_MAX / range;
-    const unsigned int limit = buckets * range;
-    do
-        r = rand();
-    while (r >= limit);
-    return min + (r / buckets);
+int randomInRange(int min, int max) {
+    return min + rand() / (RAND_MAX / (max - min + 1) + 1);
 }
